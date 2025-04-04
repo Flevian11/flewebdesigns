@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details | Flevian Ochoka</title>
+  <meta name="description" content="Detailed case study of Flevian Ochoka's professional projects">
+  <meta name="keywords" content="IT projects, web development, cybersecurity, tech training">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Flevian Ochoka</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://twitter.com/yourprofile" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/yourprofile" class="github"><i class="bi bi-github"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="breadcrumb-item active current" id="current-project">Project Details</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1 id="project-title">Project Details</h1>
+        <p id="project-subtitle">Loading project information...</p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 g-lg-5">
+          <div class="col-lg-6">
+            <!-- Project Images will be loaded here dynamically -->
+            <div id="project-gallery"></div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="position-sticky" style="top: 40px">
+              <div class="portfolio-description">
+                <h2 id="project-heading">Project Overview</h2>
+                <div id="project-description">
+                  <p>Loading project details...</p>
+                </div>
+
+                <div class="testimonial-item d-none" id="project-testimonial">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span id="testimonial-text">Client testimonial about the project</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <div>
+                    <img src="" id="testimonial-img" class="testimonial-img" alt="Client photo">
+                    <h3 id="testimonial-name">Client Name</h3>
+                    <h4 id="testimonial-role">Client Position</h4>
+                  </div>
+                </div>
+
+                <div id="additional-details"></div>
+              </div>
+
+              <div class="portfolio-info mt-5">
+                <h3>Project information</h3>
+                <ul id="project-info">
+                  <li><strong>Category</strong> <span id="project-category">Loading...</span></li>
+                  <li><strong>Client</strong> <span id="project-client">Loading...</span></li>
+                  <li><strong>Project date</strong> <span id="project-date">Loading...</span></li>
+                  <li><strong>Technologies</strong> <span id="project-tech">Loading...</span></li>
+                  <li id="project-url-item" class="d-none"><strong>Project URL</strong> <a href="#" id="project-url">www.example.com</a></li>
+                  <li><a href="#" class="btn-visit align-self-start d-none" id="visit-website">Visit Website</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1">Flevian Ochoka</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://twitter.com/yourprofile"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/yourprofile"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/yourprofile"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Project Details Loader -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get project ID from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectId = urlParams.get('project');
+      
+      // Project data
+      const projects = {
+        'e-learning': {
+          title: 'TechSkill LMS Platform',
+          category: 'Web Development',
+          subtitle: 'Custom learning management system for IT training programs',
+          client: 'Tech Education Foundation',
+          date: 'January 2023',
+          tech: 'React, Node.js, MongoDB',
+          url: 'https://learnwithflevian.odoo.com',
+          images: [
+            'portfolio-1.webp',
+            'portfolio-10.webp',
+            'portfolio-7.webp'
+          ],
+          description: `
+            <p>Developed a comprehensive Learning Management System to facilitate online IT training programs with interactive courses, progress tracking, and certification capabilities.</p>
+            <p>The platform features:</p>
+            <ul>
+              <li>Interactive course modules with video and quiz components</li>
+              <li>Progress tracking and certification system</li>
+              <li>Admin dashboard for content management</li>
+              <li>Mobile-responsive design for all devices</li>
+            </ul>
+            <p>The system currently serves over 500 active users and has increased course completion rates by 40% compared to previous solutions.</p>
+          `,
+          testimonial: {
+            text: "Flevian's LMS platform transformed our training programs. The intuitive interface and robust features have significantly improved our students' learning experience.",
+            name: "Dr. Sarah Mwangi",
+            role: "Director, Tech Education Foundation",
+            img: "person-f-5.webp"
+          }
+        },
+        'e-commerce': {
+          title: 'AfriTech E-Commerce',
+          category: 'Web Development',
+          subtitle: 'Complete online store with payment integration',
+          client: 'AfriTech Solutions',
+          date: 'March 2023',
+          tech: 'Shopify, Liquid, JavaScript',
+          url: 'https://www.pamdacbo.com',
+          images: [
+            'portfolio-2.webp',
+            'portfolio-11.webp',
+            'portfolio-4.webp'
+          ],
+          description: `
+            <p>Built a fully-featured e-commerce platform specializing in technology products for the African market, with integrated payment gateways and inventory management.</p>
+            <p>Key features include:</p>
+            <ul>
+              <li>Multi-currency payment processing</li>
+              <li>Custom product filtering system</li>
+              <li>Automated inventory tracking</li>
+              <li>Mobile-optimized checkout flow</li>
+            </ul>
+            <p>The platform currently lists over 200 products and processes an average of 50 orders daily.</p>
+          `
+        },
+        'business-portal': {
+          title: 'Enterprise Business Portal',
+          category: 'Web Development',
+          subtitle: 'Custom CRM solution with analytics dashboard',
+          client: 'Nairobi Business Solutions',
+          date: 'August 2023',
+          tech: 'Vue.js, Laravel, MySQL',
+          images: [
+            'portfolio-3.webp',
+            'portfolio-5.webp',
+            'portfolio-8.webp'
+          ],
+          description: `
+            <p>Developed a comprehensive business management portal integrating CRM, project tracking, and analytics dashboards for a corporate client.</p>
+            <p>The solution includes:</p>
+            <ul>
+              <li>Custom workflow automation</li>
+              <li>Real-time analytics dashboard</li>
+              <li>Department-specific modules</li>
+              <li>Secure document management</li>
+            </ul>
+            <p>The portal serves 3 departments with 75+ daily active users, streamlining business operations by 30%.</p>
+          `
+        },
+        'digital-literacy': {
+          title: 'Digital Literacy Program',
+          category: 'Training',
+          subtitle: 'Community tech empowerment initiative',
+          client: 'Community Development Organization',
+          date: 'Ongoing',
+          tech: 'Curriculum Development, Workshops',
+          description: `
+            <p>Designed and implemented a 12-week digital literacy program to empower community members with essential technology skills.</p>
+            <p>Program highlights:</p>
+            <ul>
+              <li>Basic computer skills training</li>
+              <li>Internet safety and cybersecurity fundamentals</li>
+              <li>Productivity software training</li>
+              <li>Mobile device proficiency</li>
+            </ul>
+            <p>The program has graduated over 120 participants with a 92% satisfaction rate based on post-training surveys.</p>
+          `,
+          testimonial: {
+            text: "This program has been life-changing for our community members. Many participants have gained employment thanks to the digital skills they acquired.",
+            name: "James Omondi",
+            role: "Program Coordinator",
+            img: "person-m-7.webp"
+          }
+        },
+        'security-audit': {
+          title: 'Enterprise Security Audit',
+          category: 'Security',
+          subtitle: 'Comprehensive network vulnerability assessment',
+          client: 'Financial Services Company',
+          date: 'November 2023',
+          tech: 'Penetration Testing, NIST Framework',
+          description: `
+            <p>Conducted a thorough security assessment for a financial services company, identifying vulnerabilities and recommending improvements.</p>
+            <p>Scope of work included:</p>
+            <ul>
+              <li>Network penetration testing</li>
+              <li>Application security review</li>
+              <li>Policy and procedure evaluation</li>
+              <li>Employee security awareness assessment</li>
+            </ul>
+            <p>The audit covered 15 critical systems and resulted in a 60% reduction in identified vulnerabilities after implementation of recommended changes.</p>
+          `,
+          testimonial: {
+            text: "Flevian's security audit was incredibly thorough. The detailed report and clear recommendations helped us significantly strengthen our security posture.",
+            name: "Grace Wambui",
+            role: "IT Security Manager",
+            img: "person-f-8.webp"
+          }
+        }
+      };
+
+      // Load project data
+      if (projectId && projects[projectId]) {
+        const project = projects[projectId];
+        
+        // Update page metadata
+        document.title = `${project.title} | Flevian Ochoka`;
+        document.querySelector('meta[name="description"]').content = project.subtitle;
+        
+        // Update header
+        document.getElementById('project-title').textContent = project.title;
+        document.getElementById('project-subtitle').textContent = project.subtitle;
+        document.getElementById('current-project').textContent = project.title;
+        
+        // Update content
+        document.getElementById('project-heading').textContent = project.title;
+        document.getElementById('project-description').innerHTML = project.description;
+        
+        // Update project info
+        document.getElementById('project-category').textContent = project.category;
+        document.getElementById('project-client').textContent = project.client;
+        document.getElementById('project-date').textContent = project.date;
+        document.getElementById('project-tech').textContent = project.tech;
+        
+        // Update URL if exists
+        if (project.url) {
+          document.getElementById('project-url').href = project.url;
+          document.getElementById('project-url').textContent = project.url.replace('https://', '');
+          document.getElementById('project-url-item').classList.remove('d-none');
+          document.getElementById('visit-website').href = project.url;
+          document.getElementById('visit-website').classList.remove('d-none');
+        }
+        
+        // Load images
+        const gallery = document.getElementById('project-gallery');
+        project.images.forEach((image, index) => {
+          const img = document.createElement('img');
+          img.src = `assets/img/portfolio/${image}`;
+          img.className = 'img-fluid mb-4';
+          img.alt = `${project.title} screenshot ${index + 1}`;
+          img.loading = 'lazy';
+          gallery.appendChild(img);
+        });
+        
+        // Load testimonial if exists
+        if (project.testimonial) {
+          const testimonial = document.getElementById('project-testimonial');
+          testimonial.classList.remove('d-none');
+          document.getElementById('testimonial-text').textContent = project.testimonial.text;
+          document.getElementById('testimonial-name').textContent = project.testimonial.name;
+          document.getElementById('testimonial-role').textContent = project.testimonial.role;
+          document.getElementById('testimonial-img').src = `assets/img/person/${project.testimonial.img}`;
+          document.getElementById('testimonial-img').alt = project.testimonial.name;
+        }
+      } else {
+        document.getElementById('project-title').textContent = 'Project Not Found';
+        document.getElementById('project-subtitle').textContent = 'The requested project could not be found';
+        document.getElementById('project-description').innerHTML = '<p>Please return to the <a href="index.html#portfolio">portfolio page</a> to view available projects.</p>';
+      }
+      
+      // Initialize GLightbox for image gallery
+      const lightbox = GLightbox({
+        selector: '.preview-link'
+      });
+      
+      // Initialize AOS animations
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true
+      });
+    });
+  </script>
+
+</body>
+</html>
