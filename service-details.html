@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - EasyFolio Bootstrap Template</title>
+  <title>Service Details - TechSolutions</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,13 +27,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: EasyFolio
-  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
-  * Updated: Feb 21 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="service-details-page">
@@ -42,36 +35,17 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">EasyFolio</h1>
+        <h1 class="sitename">TechSolutions</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -93,22 +67,25 @@
       <div class="breadcrumbs">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Category</a></li>
-            <li class="breadcrumb-item active current">Service Details</li>
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html#services">Services</a></li>
+            <li class="breadcrumb-item active current" id="current-service">Service Details</li>
           </ol>
         </nav>
       </div>
 
       <div class="title-wrapper">
-        <h1>Service Details</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <h1 class="text-gradient" id="service-title">Service Details</h1>
+        <p class="subtitle" id="service-subtitle">Comprehensive tech solutions tailored to your digital transformation needs</p>
       </div>
     </div><!-- End Page Title -->
 
     <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-
+    <section id="service-details" class="service-details section position-relative">
+      <!-- Animated background elements -->
+      <div class="service-detail-shape-1"></div>
+      <div class="service-detail-shape-2"></div>
+      
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
@@ -130,100 +107,81 @@
                   }
                 }
               </script>
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/services/services-1.webp" alt="" class="img-fluid" loading="lazy">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/services/services-2.webp" alt="" class="img-fluid" loading="lazy">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/services/services-3.webp" alt="" class="img-fluid" loading="lazy">
-                </div>
+              <div class="swiper-wrapper align-items-center" id="service-gallery">
+                <!-- Dynamic content will be inserted here -->
               </div>
               <div class="swiper-pagination"></div>
             </div>
 
             <div class="content mt-5">
-              <h3>Digital Marketing Solutions</h3>
-              <p>
-                Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka. Aut quiatem. Ut earum tempore quidem qui recusandae distinctio quo.
-              </p>
-              <p>
-                Et officiis id est ad voluptates sint quia architecto aut soluta eum voluptatum rerum illo mara. Ut earum tempore quidem qui recusandae distinctio quo. Veniam maiores eos cumque distinctio.
+              <h3 id="service-content-title">Service Overview</h3>
+              <p id="service-description">
+                Loading service details...
               </p>
 
-              <div class="features mt-4">
-                <div class="row gy-4">
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
-                      <h4>Search Engine Optimization</h4>
-                    </div>
-                  </div>
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
-                      <h4>Social Media Marketing</h4>
-                    </div>
-                  </div>
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
-                      <h4>Content Marketing Strategy</h4>
-                    </div>
-                  </div>
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-box d-flex align-items-center">
-                      <i class="bi bi-check"></i>
-                      <h4>Email Marketing Campaigns</h4>
-                    </div>
-                  </div>
-                </div>
+              <div class="features mt-4" id="service-features">
+                <!-- Dynamic features will be inserted here -->
               </div>
 
-              <p class="mt-4">
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
+              <div class="service-process mt-5" id="service-process">
+                <h4>Our Process</h4>
+                <!-- Dynamic process steps will be inserted here -->
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="service-info">
+            <div class="service-info bg-glass">
               <h4>Service Information</h4>
               <div class="info-item">
                 <i class="bi bi-clock"></i>
                 <h5>Project Duration</h5>
-                <p>3-6 months</p>
+                <p id="service-duration">Varies by scope</p>
               </div>
               <div class="info-item">
-                <i class="bi bi-person-check"></i>
-                <h5>Project Manager</h5>
-                <p>Sarah Johnson</p>
+                <i class="bi bi-currency-dollar"></i>
+                <h5>Starting From</h5>
+                <p id="service-price">Custom quote</p>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-stars"></i>
+                <h5>Service Level</h5>
+                <p id="service-level">Premium</p>
               </div>
               <div class="info-item">
                 <i class="bi bi-telephone"></i>
                 <h5>Contact Support</h5>
                 <p>+1 (555) 123-4567</p>
               </div>
+              <a href="index.html#contact" class="btn btn-gradient w-100 mt-3 hover-scale">
+                <span class="d-flex align-items-center justify-content-center">
+                  Get a Quote <i class="bi bi-arrow-right ms-2"></i>
+                </span>
+              </a>
             </div>
 
             <div class="related-services mt-5">
               <h4>Related Services</h4>
-              <div class="service-item">
-                <i class="bi bi-bar-chart"></i>
-                <h5><a href="#">Business Analytics</a></h5>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              <div class="service-item card-hover bg-glass">
+                <div class="service-icon bg-cyber">
+                  <i class="bi bi-shield-lock"></i>
+                </div>
+                <h5><a href="service-details.html?service=cybersecurity">Cybersecurity Services</a></h5>
+                <p>Protecting businesses from digital threats with tailored security solutions</p>
               </div>
-              <div class="service-item">
-                <i class="bi bi-briefcase"></i>
-                <h5><a href="#">Business Consulting</a></h5>
-                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+              <div class="service-item card-hover bg-glass">
+                <div class="service-icon bg-training">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h5><a href="service-details.html?service=training">IT Training</a></h5>
+                <p>Empowering individuals with hands-on digital skills and AI knowledge</p>
               </div>
-              <div class="service-item">
-                <i class="bi bi-graph-up"></i>
-                <h5><a href="#">Financial Planning</a></h5>
-                <p>Sed perspiciatis omnis iste natus error sit voluptatem doloremque</p>
+              <div class="service-item card-hover bg-glass">
+                <div class="service-icon bg-cloud">
+                  <i class="bi bi-cloud"></i>
+                </div>
+                <h5><a href="service-details.html?service=cloud-solutions">Cloud Solutions</a></h5>
+                <p>Migration, setup and management of cloud infrastructure</p>
               </div>
             </div>
           </div>
@@ -234,29 +192,31 @@
 
     </section><!-- /Service Details Section -->
 
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box bg-gradient text-center" data-aos="zoom-in">
+          <h3>Ready to Transform Your Business?</h3>
+          <p>Get in touch with our experts to discuss how we can help you achieve your goals</p>
+          <a href="index.html#contact" class="btn btn-light hover-scale">Contact Us Now</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer id="footer" class="footer">
-
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">TechSolutions</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -274,6 +234,519 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Service Details Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get service parameter from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceParam = urlParams.get('service') || 'default';
+      
+      // Service data
+      const services = {
+        'cybersecurity': {
+          title: 'Cybersecurity Services',
+          subtitle: 'Enterprise-grade protection against digital threats',
+          description: 'Our comprehensive cybersecurity services protect your business from evolving digital threats with tailored security solutions. We conduct thorough vulnerability assessments, penetration testing, and implement robust security measures to safeguard your critical assets.',
+          duration: '2-6 weeks for assessment, ongoing for protection',
+          price: '$5,000+ depending on scope',
+          level: 'Enterprise',
+          features: [
+            'Vulnerability assessments and penetration testing',
+            'Security policy development and implementation',
+            '24/7 threat monitoring and incident response',
+            'Employee cybersecurity awareness training',
+            'Compliance with industry regulations (GDPR, HIPAA, etc.)'
+          ],
+          process: [
+            {title: 'Assessment', desc: 'Comprehensive evaluation of your current security posture'},
+            {title: 'Strategy', desc: 'Custom security roadmap development'},
+            {title: 'Implementation', desc: 'Deployment of security solutions'},
+            {title: 'Monitoring', desc: 'Ongoing protection and updates'},
+            {title: 'Training', desc: 'Staff education and awareness programs'}
+          ],
+          images: [
+            'assets/img/services/cyber-1.webp',
+            'assets/img/services/cyber-2.webp',
+            'assets/img/services/cyber-3.webp'
+          ]
+        },
+        'training': {
+          title: 'IT Training Programs',
+          subtitle: 'Empowering your team with cutting-edge digital skills',
+          description: 'Transform your workforce with our comprehensive IT training programs. We offer hands-on training in emerging technologies, cloud computing, AI fundamentals, and cybersecurity awareness to keep your team competitive in the digital landscape.',
+          duration: 'Flexible schedules (1-day workshops to 12-week courses)',
+          price: '$1,500 per participant (group discounts available)',
+          level: 'All Levels',
+          features: [
+            'AI & Machine Learning fundamentals',
+            'Cloud certification preparation (AWS, Azure)',
+            'Cybersecurity best practices',
+            'Data analytics and visualization',
+            'Custom training programs for your specific needs'
+          ],
+          process: [
+            {title: 'Needs Analysis', desc: 'Identify skill gaps and training requirements'},
+            {title: 'Curriculum Design', desc: 'Customized training program development'},
+            {title: 'Delivery', desc: 'Interactive training sessions (in-person or virtual)'},
+            {title: 'Assessment', desc: 'Knowledge evaluation and certification'},
+            {title: 'Follow-up', desc: 'Ongoing support and advanced training options'}
+          ],
+          images: [
+            'assets/img/services/training-1.webp',
+            'assets/img/services/training-2.webp',
+            'assets/img/services/training-3.webp'
+          ]
+        },
+        'web-development': {
+          title: 'Web Development',
+          subtitle: 'High-performance websites and web applications',
+          description: 'We create custom websites and web applications designed for performance, accessibility, and conversion. Our development process focuses on user experience, technical excellence, and scalable architecture to grow with your business.',
+          duration: '4-12 weeks depending on complexity',
+          price: '$10,000+ for custom projects',
+          level: 'Premium',
+          features: [
+            'Responsive, mobile-first design',
+            'Progressive Web App (PWA) development',
+            'Headless CMS integration',
+            'E-commerce solutions',
+            'Performance optimization and SEO'
+          ],
+          process: [
+            {title: 'Discovery', desc: 'Requirements gathering and planning'},
+            {title: 'Design', desc: 'UI/UX prototyping and approval'},
+            {title: 'Development', desc: 'Agile implementation with regular demos'},
+            {title: 'Testing', desc: 'Quality assurance and user testing'},
+            {title: 'Launch', desc: 'Deployment and ongoing maintenance'}
+          ],
+          images: [
+            'assets/img/services/web-1.webp',
+            'assets/img/services/web-2.webp',
+            'assets/img/services/web-3.webp'
+          ]
+        },
+        'cloud-solutions': {
+          title: 'Cloud Solutions',
+          subtitle: 'Secure, scalable cloud infrastructure',
+          description: 'Our cloud solutions provide secure, scalable infrastructure for businesses of all sizes. We specialize in cloud migration, Kubernetes orchestration, and multi-cloud strategies to optimize performance and reduce costs.',
+          duration: '4-8 weeks for migration, ongoing management',
+          price: '$3,000+ monthly managed services',
+          level: 'Enterprise',
+          features: [
+            'Cloud migration strategy and execution',
+            'Kubernetes orchestration and management',
+            'Cost optimization and monitoring',
+            'Disaster recovery planning',
+            'Hybrid cloud solutions'
+          ],
+          process: [
+            {title: 'Assessment', desc: 'Evaluate current infrastructure and needs'},
+            {title: 'Planning', desc: 'Develop cloud strategy and architecture'},
+            {title: 'Migration', desc: 'Seamless transition to cloud environment'},
+            {title: 'Optimization', desc: 'Performance tuning and cost management'},
+            {title: 'Management', desc: 'Ongoing monitoring and support'}
+          ],
+          images: [
+            'assets/img/services/cloud-1.webp',
+            'assets/img/services/cloud-2.webp',
+            'assets/img/services/cloud-3.webp'
+          ]
+        },
+        'default': {
+          title: 'Our Services',
+          subtitle: 'Comprehensive tech solutions for your business',
+          description: 'Explore our range of professional services designed to help your business thrive in the digital age. From cybersecurity to cloud solutions, we provide end-to-end IT services tailored to your specific needs.',
+          duration: 'Varies by service',
+          price: 'Contact for quote',
+          level: 'Various',
+          features: [
+            'Customized solutions for your business',
+            'Expert consultation and planning',
+            'Cutting-edge technology implementation',
+            'Ongoing support and maintenance',
+            'Training and knowledge transfer'
+          ],
+          process: [
+            {title: 'Consultation', desc: 'Understand your business needs'},
+            {title: 'Proposal', desc: 'Tailored solution recommendation'},
+            {title: 'Implementation', desc: 'Professional execution'},
+            {title: 'Support', desc: 'Ongoing maintenance and updates'}
+          ],
+          images: [
+            'assets/img/services/default-1.webp',
+            'assets/img/services/default-2.webp',
+            'assets/img/services/default-3.webp'
+          ]
+        }
+      };
+
+      // Get current service data
+      const service = services[serviceParam] || services['default'];
+      
+      // Update page content
+      document.getElementById('current-service').textContent = service.title;
+      document.getElementById('service-title').textContent = service.title;
+      document.getElementById('service-subtitle').textContent = service.subtitle;
+      document.getElementById('service-content-title').textContent = `${service.title} Overview`;
+      document.getElementById('service-description').textContent = service.description;
+      document.getElementById('service-duration').textContent = service.duration;
+      document.getElementById('service-price').textContent = service.price;
+      document.getElementById('service-level').textContent = service.level;
+      
+      // Update gallery images
+      const gallery = document.getElementById('service-gallery');
+      gallery.innerHTML = service.images.map(img => `
+        <div class="swiper-slide">
+          <img src="${img}" alt="${service.title}" class="img-fluid" loading="lazy">
+        </div>
+      `).join('');
+      
+      // Update features
+      const featuresContainer = document.getElementById('service-features');
+      featuresContainer.innerHTML = `
+        <div class="row gy-4">
+          ${service.features.map((feature, index) => `
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="${100 + (index * 100)}">
+              <div class="feature-box d-flex align-items-start">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <div>
+                  <h4>${feature}</h4>
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      
+      // Update process
+      const processContainer = document.getElementById('service-process');
+      processContainer.innerHTML = `
+        <div class="process-steps">
+          ${service.process.map((step, index) => `
+            <div class="process-step" data-aos="fade-up" data-aos-delay="${index * 100}">
+              <div class="step-number">${index + 1}</div>
+              <div class="step-content">
+                <h5>${step.title}</h5>
+                <p>${step.desc}</p>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      
+      // Reinitialize swiper after content load
+      if (typeof Swiper !== 'undefined') {
+        new Swiper('.service-details-slider', {
+          loop: true,
+          speed: 600,
+          autoplay: {
+            delay: 5000
+          },
+          slidesPerView: 1,
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+          }
+        });
+      }
+    });
+  </script>
+
+  <style>
+    /* Service Details Specific Styles */
+    .service-details-page {
+      background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+      color: white;
+    }
+    
+    .service-details {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .service-detail-shape-1,
+    .service-detail-shape-2 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.1;
+      z-index: -1;
+    }
+    
+    .service-detail-shape-1 {
+      background: #6a11cb;
+      top: 50px;
+      left: -200px;
+    }
+    
+    .service-detail-shape-2 {
+      background: #2575fc;
+      bottom: 100px;
+      right: -200px;
+    }
+    
+    .page-title {
+      padding: 100px 0 60px;
+      position: relative;
+    }
+    
+    .breadcrumb {
+      background: rgba(255,255,255,0.05);
+      padding: 12px 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+    
+    .breadcrumb-item a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+    
+    .breadcrumb-item.active {
+      color: white;
+    }
+    
+    .title-wrapper h1 {
+      font-size: 3rem;
+      margin: 20px 0 15px;
+    }
+    
+    .subtitle {
+      color: rgba(255,255,255,0.7);
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .bg-glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px;
+    }
+    
+    .service-details-slider {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    
+    .service-details-slider img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .swiper-pagination-bullet {
+      background: rgba(255,255,255,0.5);
+    }
+    
+    .swiper-pagination-bullet-active {
+      background: white;
+    }
+    
+    .content h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: white;
+    }
+    
+    .content p {
+      color: rgba(255,255,255,0.8);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    
+    .feature-box {
+      background: rgba(255,255,255,0.03);
+      padding: 20px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .feature-box:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-5px);
+    }
+    
+    .feature-box i {
+      font-size: 1.5rem;
+      margin-top: 5px;
+    }
+    
+    .feature-box h4 {
+      font-size: 1.1rem;
+      color: white;
+    }
+    
+    .info-item {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .info-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    
+    .info-item i {
+      font-size: 1.5rem;
+      color: #6a11cb;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    
+    .info-item h5 {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 5px;
+    }
+    
+    .info-item p {
+      font-size: 1.1rem;
+      color: white;
+      margin-bottom: 0;
+    }
+    
+    .related-services .service-item {
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .related-services .service-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .related-services .service-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    
+    .related-services .service-item h5 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    
+    .related-services .service-item h5 a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .related-services .service-item p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+    
+    .process-steps {
+      margin-top: 30px;
+    }
+    
+    .process-step {
+      display: flex;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    
+    .process-step:last-child {
+      margin-bottom: 0;
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    
+    .step-content {
+      padding-top: 5px;
+    }
+    
+    .step-content h5 {
+      color: white;
+      margin-bottom: 5px;
+    }
+    
+    .step-content p {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 0;
+    }
+    
+    .cta-section {
+      padding: 80px 0;
+      position: relative;
+    }
+    
+    .cta-box {
+      padding: 60px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    
+    .cta-box h3 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: white;
+    }
+    
+    .cta-box p {
+      color: rgba(255,255,255,0.8);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .btn-light {
+      background: white;
+      color: #6a11cb;
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .page-title {
+        padding: 80px 0 40px;
+      }
+      
+      .title-wrapper h1 {
+        font-size: 2.2rem;
+      }
+      
+      .content h3 {
+        font-size: 1.8rem;
+      }
+      
+      .cta-box {
+        padding: 40px 20px;
+      }
+      
+      .cta-box h3 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 
 </body>
 
