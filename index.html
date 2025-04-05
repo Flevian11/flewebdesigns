@@ -352,90 +352,138 @@
     </section><!-- /Portfolio Section -->
 
    <!-- Services Section -->
-<section id="services" class="services section">
+<section id="services" class="services section position-relative overflow-hidden">
+  <!-- Animated background elements -->
+  <div class="service-bg-shape-1" data-aos="fade-left"></div>
+  <div class="service-bg-shape-2" data-aos="fade-right"></div>
+  <div class="particles-js" id="service-particles"></div>
+
   <div class="container section-title" data-aos="fade-up" data-aos-duration="800">
-    <h2>Services</h2>
+    <h2 class="text-gradient">Services</h2>
     <div class="title-shape">
       <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="url(#lineGradient)" stroke-width="2"></path>
+      </svg>
+      <svg width="0" height="0">
+        <defs>
+          <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#6a11cb" />
+            <stop offset="100%" stop-color="#2575fc" />
+          </linearGradient>
+        </defs>
       </svg>
     </div>
-    <p>Comprehensive tech solutions tailored to your needs</p>
+    <p class="subtitle">Comprehensive tech solutions tailored to your digital transformation needs</p>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
     <div class="row align-items-center">
-      <div class="col-lg-4 mb-5 mb-lg-0">
-        <h2 class="fw-bold mb-4 servies-title">Bridging the gap between technology and people</h2>
-        <p class="mb-4">From cybersecurity to digital skills training, I provide end-to-end IT solutions designed to future-proof your business.</p>
-        <a href="#contact" class="btn btn-outline-primary hover-scale">Get in touch</a>
+      <div class="col-lg-4 mb-5 mb-lg-0 pe-lg-5">
+        <h2 class="fw-bold mb-4 servies-title text-gradient-reverse">Bridging the gap between <span class="text-underline">technology</span> and <span class="text-underline">people</span></h2>
+        <p class="mb-4">From cybersecurity to digital skills training, we provide end-to-end IT solutions designed to future-proof your business in an increasingly digital world.</p>
+        <a href="#contact" class="btn btn-gradient hover-scale px-4 py-3">
+          <span class="d-flex align-items-center">
+            Get in touch 
+            <i class="bi bi-arrow-right ms-2"></i>
+          </span>
+        </a>
       </div>
       <div class="col-lg-8">
         <div class="row g-4">
-          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-card card-hover">
+          <!-- Cybersecurity Card -->
+          <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
+            <div class="service-card card-hover bg-glass">
               <div class="service-icon bg-cyber">
                 <i class="bi bi-shield-lock"></i>
+                <div class="icon-pulse"></div>
               </div>
+              <div class="service-badge">Most Popular</div>
               <h3><a href="service-details.html?service=cybersecurity" class="stretched-link">Cybersecurity Services</a></h3>
-              <p>Protecting businesses from digital threats with tailored security solutions and risk assessments</p>
+              <p>Comprehensive protection against digital threats with enterprise-grade security solutions</p>
               <div class="hover-content">
-                <ul>
-                  <li>Vulnerability assessments</li>
-                  <li>Security audits</li>
-                  <li>Incident response</li>
+                <ul class="service-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Vulnerability assessments</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Penetration testing</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Security policy development</li>
                 </ul>
+                <div class="service-tech">
+                  <span class="tech-tag">SIEM</span>
+                  <span class="tech-tag">EDR</span>
+                  <span class="tech-tag">Zero Trust</span>
+                </div>
               </div>
             </div>
           </div>
           
-          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-card card-hover">
+          <!-- IT Training Card -->
+          <div class="col-md-6" data-aos="flip-right" data-aos-delay="300">
+            <div class="service-card card-hover bg-glass">
               <div class="service-icon bg-training">
                 <i class="bi bi-laptop"></i>
+                <div class="icon-pulse"></div>
               </div>
               <h3><a href="service-details.html?service=training" class="stretched-link">IT Training</a></h3>
-              <p>Empowering individuals with hands-on digital skills and AI knowledge for the modern workplace</p>
+              <p>Transform your workforce with cutting-edge digital skills and AI knowledge</p>
               <div class="hover-content">
-                <ul>
-                  <li>AI fundamentals</li>
-                  <li>Cloud computing</li>
-                  <li>Digital literacy</li>
+                <ul class="service-features">
+                  <li><i class="bi bi-check-circle-fill"></i> AI & ML fundamentals</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Cloud certification prep</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Cybersecurity awareness</li>
                 </ul>
+                <div class="service-tech">
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">Azure</span>
+                  <span class="tech-tag">TensorFlow</span>
+                </div>
               </div>
             </div>
           </div>
           
-          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-card card-hover">
+          <!-- Web Development Card -->
+          <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
+            <div class="service-card card-hover bg-glass">
               <div class="service-icon bg-web">
                 <i class="bi bi-code-square"></i>
+                <div class="icon-pulse"></div>
               </div>
+              <div class="service-badge">Trending</div>
               <h3><a href="service-details.html?service=web-development" class="stretched-link">Web Development</a></h3>
-              <p>Custom websites and web applications built for performance, accessibility, and conversion</p>
+              <p>High-performance websites and web apps built for scalability and engagement</p>
               <div class="hover-content">
-                <ul>
-                  <li>Responsive design</li>
-                  <li>E-commerce solutions</li>
-                  <li>Web app development</li>
+                <ul class="service-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Progressive Web Apps</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Headless CMS integration</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Performance optimization</li>
                 </ul>
+                <div class="service-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">GraphQL</span>
+                </div>
               </div>
             </div>
           </div>
           
-          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="500">
-            <div class="service-card card-hover">
+          <!-- Cloud Solutions Card -->
+          <div class="col-md-6" data-aos="flip-right" data-aos-delay="500">
+            <div class="service-card card-hover bg-glass">
               <div class="service-icon bg-cloud">
                 <i class="bi bi-cloud"></i>
+                <div class="icon-pulse"></div>
               </div>
               <h3><a href="service-details.html?service=cloud-solutions" class="stretched-link">Cloud Solutions</a></h3>
-              <p>Migration, setup and management of secure, scalable cloud infrastructure</p>
+              <p>Enterprise cloud infrastructure designed for security, scalability and cost-efficiency</p>
               <div class="hover-content">
-                <ul>
-                  <li>AWS/Azure setup</li>
-                  <li>Hybrid cloud</li>
-                  <li>Cost optimization</li>
+                <ul class="service-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Multi-cloud strategy</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Kubernetes orchestration</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Cost optimization</li>
                 </ul>
+                <div class="service-tech">
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">K8s</span>
+                  <span class="tech-tag">Terraform</span>
+                </div>
               </div>
             </div>
           </div>
@@ -446,17 +494,103 @@
 </section>
 
 <style>
+  /* Base Styles */
+  .services {
+    position: relative;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: white;
+    z-index: 1;
+  }
+  
+  .service-bg-shape-1,
+  .service-bg-shape-2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+    z-index: -1;
+  }
+  
+  .service-bg-shape-1 {
+    background: #6a11cb;
+    top: -100px;
+    left: -100px;
+  }
+  
+  .service-bg-shape-2 {
+    background: #2575fc;
+    bottom: -100px;
+    right: -100px;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  
+  .text-gradient-reverse {
+    background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-underline {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-underline:after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+    border-radius: 3px;
+  }
+  
+  .subtitle {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.1rem;
+  }
+  
   /* Service Card Styles */
+  .bg-glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
   .service-card {
-    background: #fff;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 30px;
     height: 100%;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
+  }
+  
+  .service-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106,17,203,0.1) 0%, rgba(37,117,252,0.1) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
   
   .service-icon {
@@ -469,7 +603,32 @@
     margin-bottom: 25px;
     font-size: 32px;
     color: white;
-    transition: transform 0.3s ease;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    opacity: 0;
+    animation: pulse 3s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      opacity: 0.5;
+    }
+    70% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
   }
   
   .bg-cyber { background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); }
@@ -482,56 +641,136 @@
     font-size: 1.5rem;
     position: relative;
     z-index: 2;
+    color: white;
   }
   
   .service-card h3 a {
-    color: #1a1a1a;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .service-card p {
-    color: #666;
+    color: rgba(255,255,255,0.7);
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
   }
   
+  .service-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
   .hover-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.3s ease;
+    transition: max-height 0.5s ease, opacity 0.4s ease;
     opacity: 0;
   }
   
-  .hover-content ul {
-    padding-left: 20px;
-    margin-top: 15px;
+  .service-features {
+    padding-left: 0;
+    margin-top: 20px;
+    list-style: none;
   }
   
-  .hover-content li {
-    margin-bottom: 8px;
-    color: #555;
+  .service-features li {
+    margin-bottom: 12px;
+    color: rgba(255,255,255,0.8);
     position: relative;
+    padding-left: 30px;
+  }
+  
+  .service-features i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.1rem;
+  }
+  
+  .service-tech {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .tech-tag {
+    background: rgba(255,255,255,0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: white;
   }
   
   /* Hover Effects */
   .card-hover:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-color: rgba(255,255,255,0.2);
+  }
+  
+  .card-hover:hover:before {
+    opacity: 1;
   }
   
   .card-hover:hover .service-icon {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1);
+  }
+  
+  .card-hover:hover .icon-pulse {
+    animation: pulse 2s infinite;
   }
   
   .card-hover:hover .hover-content {
-    max-height: 200px;
+    max-height: 300px;
     opacity: 1;
   }
   
   .card-hover:hover h3 a {
-    color: #0d6efd;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+  }
+  
+  /* Button Styles */
+  .btn-gradient {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-gradient:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 100%);
+    transition: all 0.4s ease;
+  }
+  
+  .btn-gradient:hover {
+    box-shadow: 0 10px 20px rgba(106,17,203,0.3);
+    transform: translateY(-2px);
+  }
+  
+  .btn-gradient:hover:before {
+    left: 100%;
   }
   
   .hover-scale {
@@ -542,6 +781,102 @@
     transform: scale(1.05);
   }
 </style>
+
+<script>
+  // Initialize particles.js if available
+  document.addEventListener('DOMContentLoaded', function() {
+    if(typeof particlesJS !== 'undefined') {
+      particlesJS('service-particles', {
+        "particles": {
+          "number": {
+            "value": 30,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#6a11cb"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            }
+          },
+          "opacity": {
+            "value": 0.3,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 2,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#6a11cb",
+            "opacity": 0.2,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 1,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": true,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 140,
+              "line_linked": {
+                "opacity": 0.5
+              }
+            },
+            "push": {
+              "particles_nb": 4
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    }
+  });
+</script>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
